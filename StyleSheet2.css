@@ -1,0 +1,84 @@
+﻿/* Color Palette */
+:root {
+    --dark-blue: #0d1b2a;
+    --bronze: #cd7f32;
+    --white: #ffffff;
+    --light-blue: #1b263b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--light-blue);
+    padding: 20px 0;
+}
+
+    header h1 {
+        color: var(--bronze);
+        margin: 0;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav a {
+        color: var(--white);
+        margin-right: 15px;
+        text-decoration: none;
+    }
+
+        nav a:hover {
+            color: var(--bronze);
+        }
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--dark-blue);
+}
+
+.gallery-section {
+    padding: 40px 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .gallery img {
+        width: calc(33.333% - 10px);
+        max-width: 100%;
+        height: auto;
+        border: 2px solid var(--bronze);
+        border-radius: 4px;
+    }
+
+footer {
+    background-color: var(--light-blue);
+    padding: 20px 0;
+    text-align: center;
+}
+
+    footer .social-media a {
+        margin: 0 10px;
+        color: var(--bronze);
+        text-decoration: none;
+    }
+
+        footer .social-media a:hover {
+            color: var(--white);
+        }
